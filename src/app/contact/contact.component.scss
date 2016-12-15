@@ -1,0 +1,25 @@
+@import '../../assets/styles/bourbon/bourbon';
+@import '../../assets/styles/neat/neat';
+@import '../../assets/styles/base/base';
+
+.container {
+  position: relative;
+  left: 1em;
+  @include outer-container;
+
+  header {
+    text-align: center;
+  }
+
+  img {
+    height: 15rem;
+    width: 16rem;
+    margin: auto;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    text-align: center;
+  }
+}

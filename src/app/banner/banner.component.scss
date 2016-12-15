@@ -1,9 +1,11 @@
 @import '../../assets/styles/bourbon/bourbon';
 @import '../../assets/styles/neat/neat';
 @import '../../assets/styles/base/base';
+@import '../../assets/styles/animate/animate';
 
 img {
   max-height: 800px;
+  max-width: 1200px;
   height: auto;
   left: 0;
   position: relative;

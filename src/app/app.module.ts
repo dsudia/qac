@@ -3,13 +3,15 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
+import { Ng2PageScrollModule } from 'ng2-page-scroll';
 
 import { AppComponent } from './app.component';
 import { BannerComponent } from './banner/banner.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { TechnologiesComponent } from './technologies/technologies.component';
 import { AboutComponent } from './about/about.component';
+import { ServicesComponent } from './services/services.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -17,14 +19,16 @@ import { AboutComponent } from './about/about.component';
     BannerComponent,
     HomeComponent,
     NavbarComponent,
-    TechnologiesComponent,
-    AboutComponent
+    AboutComponent,
+    ServicesComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    Ng2PageScrollModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
